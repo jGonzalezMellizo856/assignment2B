@@ -10,7 +10,7 @@ function getQueryParam(name){
 document.addEventListener('DOMContentLoaded', () => {
 
     const bvcID = getQueryParam('id');
-    const fullName = getQueryParam('fn' + '' + 'ln');
+    const fullName = getQueryParam('fullName');
     const address = getQueryParam('address');
     const status = getQueryParam('status');
     const fee = getQueryParam('fee');
