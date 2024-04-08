@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BVC Sports Club</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="registration">
+        <div id="form">
+            <h2><u>Registration</u></h2>
+            <form action="/api/register" id="register_form" method="POST">
+
+                <label for="">BVC ID Number:</label><br>
+                <input type="text" id="bvcID"><br>
+                <label for="">First Name:</label><br>
+                <input type="text" id="fn"><br>
+                <label for="">Last Name:</label><br>
+                <input type="text" id="ln"><br>
+                <label for="">Address:</label><br>
+                <input type="text" id="address"><br>
+                <label for="">Status:</label><br>
+                <select name="" id="status">
+                    <option value="student">Student</option>
+                    <option value="staff">Staff</option>
+                    <option value="volunteer">Volunteer</option>
+                </select><br>
+                <input type="submit">
+
+            </form>
+        </div>
+    </div>
+
+    <div id="confirmation" style="display: none;">
+        <h2>Thank you for registering!</h2>
+        <p><strong>BvcID:</strong><span id="confirmID"></span></p>
+        <p><strong>Full Name:</strong><span id="confirmFullName"></span></p>
+        <p><strong>Address:</Address><span id="confirmAddress"></span></strong></p>
+        <p><strong>Status:</strong><span id="confirmStatus"></span></p>
+        <p><strong>Fee:</strong><span id="confirmFee"></span></p>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
